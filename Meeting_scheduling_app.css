@@ -1,0 +1,234 @@
+body {
+    font-family: 'Josefin Sans', Arial, sans-serif;
+    background-color: #F0EBE4;
+    margin: 0;
+    padding: 0;
+    color: #303131;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F0EBE4;
+    padding: 10px 20px;
+    color: #303131;
+  }
+  
+  .navbar .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .navbar .logo i {
+    font-size: 3rem;
+    color: #303131;
+  }
+  
+  .navbar .nav-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .navbar button {
+    background: #F09700;
+    color: #303131;
+    border: 2px solid #303131;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Josefin Sans', Arial, sans-serif;
+    border-radius: 5px;
+  }
+  
+  .navbar button:hover {
+    background: #E08A00;
+  }
+  
+  .container {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .section {
+    margin-bottom: 30px;
+    background-color: #F0EBE4;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .section h2 {
+    text-align: center;
+    font-family: 'Josefin Sans', Arial, sans-serif;
+    color: #303131;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  input, button {
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'Josefin Sans', Arial, sans-serif;
+    border: 1px solid #303131;
+    border-radius: 5px;
+  }
+  
+  input {
+    background-color: #FFFFFF;
+    color: #303131;
+  }
+  
+  button {
+    background: #F09700;
+    color: #303131;
+    border: 2px solid #303131;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #E08A00;
+  }
+  
+  #login-section {
+    border: 2px solid #303131;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  #availability-list {
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 30px;
+  }
+  
+  #available-meetings {
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 30px;
+  }
+  
+  #organizer-section {
+    border: 2px solid #303131;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  #user-section {
+    border: 2px solid #303131;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .meeting-card {
+    border: 1px solid #303131;
+    padding: 15px;
+    border-radius: 5px;
+    background: #F09700;
+    text-align: center;
+    flex: 1 1 30%;
+    box-sizing: border-box;
+    max-width: 30%;
+  }
+  
+  .meeting-card h3 {
+    margin: 0 0 10px;
+    font-family: 'Josefin Sans', Arial, sans-serif;
+    color: #303131;
+  }
+  
+  .meeting-card p {
+    margin: 5px 0;
+    font-family: 'Josefin Sans', Arial, sans-serif;
+    color: #303131;
+  }
+  
+  .meeting-card button {
+    background: #303131;
+    color: #FFFFFF;
+    margin-right: 5px;
+    font-family: 'Josefin Sans', Arial, sans-serif;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .meeting-card button:hover {
+    background: #505050;
+  }
+  
+  #available-meetings .meeting-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  #available-meetings .meeting-card input,
+  #available-meetings .meeting-card button {
+    width: 95%;
+  }
+  
+  .booking {
+    border: 1px solid #303131;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background: #F09700;
+    text-align: center;
+  }
+  
+  .booking h3 {
+    margin: 0 0 10px;
+    font-family: 'Josefin Sans', Arial, sans-serif;
+    color: #303131;
+  }
+  
+  .booking p {
+    margin: 5px 0;
+    font-family: 'Josefin Sans', Arial, sans-serif;
+    color: #303131;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  @media (max-width: 480px) {
+    .navbar .logo i {
+      font-size: 2rem;
+    }
+  
+    .navbar .logo h2 {
+      font-size: 1.5rem;
+    }
+  
+    .navbar button {
+      width: 100%;
+      margin-bottom: 5px;
+    }
+  
+    .meeting-card {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  
+    #availability-list,
+    #available-meetings {
+      margin: 10px;
+      gap: 10px;
+    }
+  }
